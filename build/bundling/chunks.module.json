@@ -2,16 +2,45 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "4b3d6834c74a2f250ccf",
+  "hash": "cc3df60b283427fb0b0e",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\alexa\\OneDrive\\Dokumente\\Bewerbung\\Website\\nikolas-frontend\\build\\static",
   "assetsByChunkName": {
-    "nikolas-frontend": "nikolas-frontend.module.js"
+    "nikolas-frontend": [
+      "nikolas-frontend.module.js",
+      "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
+    ]
   },
   "assets": [
     {
+      "name": "42e421ba3cfbd16eebb4.hot-update.json",
+      "size": 58,
+      "chunks": [],
+      "chunkNames": [],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
+      "name": "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js",
+      "size": 7446,
+      "chunks": [
+        "nikolas-frontend"
+      ],
+      "chunkNames": [
+        "nikolas-frontend"
+      ],
+      "info": {
+        "hotModuleReplacement": true,
+        "immutable": true
+      },
+      "emitted": false
+    },
+    {
       "name": "nikolas-frontend.module.js",
-      "size": 6098129,
+      "size": 6199651,
       "chunks": [
         "nikolas-frontend"
       ],
@@ -19,8 +48,7 @@
         "nikolas-frontend"
       ],
       "info": {},
-      "emitted": false,
-      "isOverSizeLimit": true
+      "emitted": false
     }
   ],
   "filteredAssets": 0,
@@ -30,7 +58,8 @@
         "nikolas-frontend"
       ],
       "assets": [
-        "nikolas-frontend.module.js"
+        "nikolas-frontend.module.js",
+        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -42,7 +71,8 @@
         "nikolas-frontend"
       ],
       "assets": [
-        "nikolas-frontend.module.js"
+        "nikolas-frontend.module.js",
+        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -51,17 +81,18 @@
   "chunks": [
     {
       "id": "nikolas-frontend",
-      "rendered": false,
+      "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1499305,
+      "size": 1524773,
       "names": [
         "nikolas-frontend"
       ],
       "files": [
-        "nikolas-frontend.module.js"
+        "nikolas-frontend.module.js",
+        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
       ],
-      "hash": "74ae7d64524c2d020b2b",
+      "hash": "568f7828328994e5c4d4",
       "siblings": [],
       "parents": [],
       "children": [],
