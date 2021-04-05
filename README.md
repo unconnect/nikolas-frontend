@@ -1,4 +1,6 @@
-# my-first-frontity-project
+# Nikolas frontity project
+
+The goal is to create an react frontend for a wordpress based headless cms. 
 
 This project was bootstrapped with [Frontity](https://frontity.org/).
 

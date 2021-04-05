@@ -1,5 +1,5 @@
 const settings = {
-  "name": "my-first-frontity-project",
+  "name": "nikolas-frontend",
   "state": {
     "frontity": {
       "url": "https://test.frontity.org",
@@ -9,43 +9,13 @@ const settings = {
   },
   "packages": [
     {
-      "name": "@frontity/mars-theme",
-      "state": {
-        "theme": {
-          "menu": [
-            [
-              "Home",
-              "/"
-            ],
-            [
-              "Nature",
-              "/category/nature/"
-            ],
-            [
-              "Travel",
-              "/category/travel/"
-            ],
-            [
-              "Japan",
-              "/tag/japan/"
-            ],
-            [
-              "About Us",
-              "/about-us/"
-            ]
-          ],
-          "featured": {
-            "showOnList": false,
-            "showOnPost": false
-          }
-        }
-      }
+      name: "nikolas-real-frontend"
     },
     {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://test.frontity.org"
+          "url": "https://alexander.nikolasreuber.de/"
         }
       }
     },
