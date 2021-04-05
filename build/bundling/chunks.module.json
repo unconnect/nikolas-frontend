@@ -1,0 +1,130 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "4.46.0",
+  "hash": "77849d14218f81f9c4b4",
+  "publicPath": "/static/",
+  "outputPath": "C:\\Users\\alexa\\OneDrive\\Dokumente\\Bewerbung\\Website\\nikolas-frontend\\build\\static",
+  "assetsByChunkName": {
+    "list": "list.module.js",
+    "my-first-frontity-project": "my-first-frontity-project.module.js"
+  },
+  "assets": [
+    {
+      "name": "list.module.js",
+      "size": 47821,
+      "chunks": [
+        "list"
+      ],
+      "chunkNames": [
+        "list"
+      ],
+      "info": {},
+      "emitted": false
+    },
+    {
+      "name": "my-first-frontity-project.module.js",
+      "size": 6435044,
+      "chunks": [
+        "my-first-frontity-project"
+      ],
+      "chunkNames": [
+        "my-first-frontity-project"
+      ],
+      "info": {},
+      "emitted": false
+    }
+  ],
+  "filteredAssets": 0,
+  "entrypoints": {
+    "my-first-frontity-project": {
+      "chunks": [
+        "my-first-frontity-project"
+      ],
+      "assets": [
+        "my-first-frontity-project.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "namedChunkGroups": {
+    "my-first-frontity-project": {
+      "chunks": [
+        "my-first-frontity-project"
+      ],
+      "assets": [
+        "my-first-frontity-project.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    },
+    "list": {
+      "chunks": [
+        "list"
+      ],
+      "assets": [
+        "list.module.js"
+      ],
+      "children": {},
+      "childAssets": {}
+    }
+  },
+  "chunks": [
+    {
+      "id": "list",
+      "rendered": true,
+      "initial": false,
+      "entry": false,
+      "size": 30644,
+      "names": [
+        "list"
+      ],
+      "files": [
+        "list.module.js"
+      ],
+      "hash": "13cd489927480a429204",
+      "siblings": [],
+      "parents": [
+        "my-first-frontity-project"
+      ],
+      "children": [],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    },
+    {
+      "id": "my-first-frontity-project",
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "size": 1662049,
+      "names": [
+        "my-first-frontity-project"
+      ],
+      "files": [
+        "my-first-frontity-project.module.js"
+      ],
+      "hash": "af96d4c9da1fe5ebf4bf",
+      "siblings": [],
+      "parents": [],
+      "children": [
+        "list"
+      ],
+      "childrenByOrder": {},
+      "modules": [],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "logging": {
+    "webpack.buildChunkGraph.visitModules": {
+      "entries": [],
+      "filteredEntries": 5,
+      "debug": false
+    }
+  },
+  "children": [],
+  "generator": "loadable-components"
+}
