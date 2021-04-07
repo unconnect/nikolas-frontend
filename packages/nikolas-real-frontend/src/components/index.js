@@ -11,6 +11,9 @@ import List from "./list"
 import Post from "./post"
 import Page from "./page"
 
+// TODO: integrate dynamic Menu fetched from WP API
+// TODO: create more meaningful components
+
 const Root = ({state}) => {
 
     const data = state.source.get(state.router.link)
