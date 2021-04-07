@@ -13,7 +13,7 @@ const List = ({ state }) => {
                 return (
                     <div id={postid} key={post.id}>
                         <Link key={item.id} link={post.link}>
-                            {post.title.rendered}: {post.type} - {post.id} - {post.link}
+                            {post.title.rendered} ({post.id})
                         </Link>
                     </div>
                 )

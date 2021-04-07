@@ -2,18 +2,18 @@
   "errors": [],
   "warnings": [],
   "version": "4.46.0",
-  "hash": "cc3df60b283427fb0b0e",
+  "hash": "8a50b199eaeb92839918",
   "publicPath": "/static/",
   "outputPath": "C:\\Users\\alexa\\OneDrive\\Dokumente\\Bewerbung\\Website\\nikolas-frontend\\build\\static",
   "assetsByChunkName": {
     "nikolas-frontend": [
       "nikolas-frontend.module.js",
-      "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
+      "nikolas-frontend.6a2fd4d38bf8742b585a.hot-update.js"
     ]
   },
   "assets": [
     {
-      "name": "42e421ba3cfbd16eebb4.hot-update.json",
+      "name": "6a2fd4d38bf8742b585a.hot-update.json",
       "size": 58,
       "chunks": [],
       "chunkNames": [],
@@ -24,8 +24,8 @@
       "emitted": false
     },
     {
-      "name": "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js",
-      "size": 7446,
+      "name": "nikolas-frontend.6a2fd4d38bf8742b585a.hot-update.js",
+      "size": 27881,
       "chunks": [
         "nikolas-frontend"
       ],
@@ -40,7 +40,7 @@
     },
     {
       "name": "nikolas-frontend.module.js",
-      "size": 6199651,
+      "size": 8851938,
       "chunks": [
         "nikolas-frontend"
       ],
@@ -59,7 +59,7 @@
       ],
       "assets": [
         "nikolas-frontend.module.js",
-        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
+        "nikolas-frontend.6a2fd4d38bf8742b585a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -72,7 +72,7 @@
       ],
       "assets": [
         "nikolas-frontend.module.js",
-        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
+        "nikolas-frontend.6a2fd4d38bf8742b585a.hot-update.js"
       ],
       "children": {},
       "childAssets": {}
@@ -84,15 +84,15 @@
       "rendered": true,
       "initial": true,
       "entry": true,
-      "size": 1524773,
+      "size": 2077975,
       "names": [
         "nikolas-frontend"
       ],
       "files": [
         "nikolas-frontend.module.js",
-        "nikolas-frontend.42e421ba3cfbd16eebb4.hot-update.js"
+        "nikolas-frontend.6a2fd4d38bf8742b585a.hot-update.js"
       ],
-      "hash": "568f7828328994e5c4d4",
+      "hash": "2949b8899a492c0b5fa9",
       "siblings": [],
       "parents": [],
       "children": [],

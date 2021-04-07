@@ -6,7 +6,8 @@ const nikolasRealFront = {
     theme: Root,
   },
   state: {
-    theme: {},
+    theme: {
+    },
   },
   actions: {
     theme: {},

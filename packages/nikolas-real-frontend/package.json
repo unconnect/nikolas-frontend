@@ -8,6 +8,15 @@
   ],
   "license": "Apache-2.0",
   "dependencies": {
-    "frontity": "^1.14.3"
+    "bootstrap": "^4.6.0",
+    "dayjs": "^1.10.4",
+    "frontity": "^1.14.3",
+    "react-bootstrap": "^1.5.2"
+  },
+  "devDependencies": {
+    "css-loader": "^5.2.0",
+    "node-sass": "^5.0.0",
+    "postcss-loader": "^5.2.0",
+    "style-loader": "^2.0.0"
   }
 }

@@ -22,7 +22,13 @@
     "@frontity/mars-theme": "./packages/mars-theme",
     "@frontity/tiny-router": "^1.4.1",
     "@frontity/wp-source": "^1.11.2",
+    "bootstrap": "^4.6.0",
+    "css-loader": "^5.2.0",
+    "dayjs": "^1.10.4",
     "frontity": "^1.14.3",
-    "nikolas-real-frontend": "file:packages/nikolas-real-frontend"
+    "nikolas-real-frontend": "file:packages/nikolas-real-frontend",
+    "postcss-loader": "^5.2.0",
+    "react-bootstrap": "^1.5.2",
+    "style-loader": "^2.0.0"
   }
 }
