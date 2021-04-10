@@ -1,5 +1,5 @@
 import React from "react"
-import {connect, Global, css, styled} from "frontity"
+import {connect, Global, Head, css, styled} from "frontity"
 import Link from "@frontity/components/link"
 import Switch from "@frontity/components/switch"
 
@@ -10,6 +10,11 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import List from "./list"
 import Post from "./post"
 import Page from "./page"
+import Title from "./title"
+
+// TODO: integrate dynamic Menu fetched from WP API
+// TODO: create more meaningful components
+// TODO: title should be dynamic based on page title or later using seo package?
 
 const Root = ({state}) => {
 
@@ -42,12 +47,16 @@ const Root = ({state}) => {
 
     return (
         <>
-            <link
-                rel="stylesheet"
-                href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-                integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
-                crossOrigin="anonymous"
-            />
+           <Title />
+           <Head>
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+                    integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+                    crossOrigin="anonymous"
+                />
+            </Head>
+
             <Global
                 styles={globalStyle}
             />
@@ -58,7 +67,7 @@ const Root = ({state}) => {
                     <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="mr-auto">
                             <Nav.Link href="/">Home</Nav.Link>
-                            <Nav.Link href="/page/2/">Page 2</Nav.Link>
+                            <Nav.Link href="/blog">Blog</Nav.Link>
                             <Nav.Link href="/about-me/">About me</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
