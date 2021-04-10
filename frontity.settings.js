@@ -2,9 +2,9 @@ const settings = {
   "name": "nikolas-frontend",
   "state": {
     "frontity": {
-      "url": "https://test.frontity.org",
-      "title": "Test Frontity Blog",
-      "description": "WordPress installation for Frontity development"
+      "url": "https://alexander.nikolasreuber.de",
+      "title": "Alexander Nikolas Reuber",
+      "description": "My personal homepage and blog"
     }
   },
   "packages": [
@@ -15,7 +15,12 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://alexander.nikolasreuber.de/"
+          "url": "https://backend.nikolasreuber.de/",
+          homepage: "/home",
+          postsPage: "/blog"
+        },
+        "wpSource": {
+          "prefix": "/api"
         }
       }
     },
