@@ -120,3 +120,5 @@ build/
 
 # Jetbrains Config
 .idea
+
+.vercel

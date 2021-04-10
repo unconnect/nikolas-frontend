@@ -15,7 +15,10 @@ const settings = {
       "name": "@frontity/wp-source",
       "state": {
         "source": {
-          "url": "https://alexander.nikolasreuber.de/"
+          "url": "https://backend.nikolasreuber.de/"
+        },
+        wpSource: {
+          prefix: "/api"
         }
       }
     },
