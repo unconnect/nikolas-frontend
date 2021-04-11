@@ -23,6 +23,7 @@
     "@frontity/tiny-router": "^1.4.1",
     "@frontity/wp-source": "^1.11.2",
     "bootstrap": "^4.6.0",
+    "bootstrap-icons": "^1.4.1",
     "css-loader": "^5.2.0",
     "dayjs": "^1.10.4",
     "frontity": "^1.14.3",
