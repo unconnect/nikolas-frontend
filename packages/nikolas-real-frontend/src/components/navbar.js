@@ -25,27 +25,31 @@ const BsNavbar = ({state}) => {
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" aria-label="toolbar">
-                    <ButtonGroup>
+                    <ul className="navbar-nav mr-auto">
                         {items.map((item) => {
                             // Make URL Object from item.url string
                             const itemFrontendUrl = new URL(item.url)
+                            const isCurrent = (itemFrontendUrl.pathname == state.router.link) ? "active" : ""
                             if (!item.child_items) {
                                 return (
                                     // Only output pathname and has from URL
-                                    <Link className={"btn btn-outline-secondary"} key={item.ID}
+                                    <li className={`nav-item ${isCurrent}`} key={item.ID}>
+                                        <Link className={"nav-link"}
                                               link={itemFrontendUrl.pathname + itemFrontendUrl.hash}>{item.title}</Link>
+                                    </li>
                                 )
                             } else {
                                 const childItems = item.child_items
                                 return (
-                                    <Dropdown key={"dropdown" + item.ID} as={ButtonGroup} variant="outline-secondary">
+                                    <li className="nav-item" key={item.ID}>
+                                    <Dropdown key={"dropdown" + item.ID} as={ButtonGroup} variant="default">
                                         <Link key={item.ID}
                                                   link={itemFrontendUrl.pathname + itemFrontendUrl.hash}
-                                              className={"btn btn-outline-secondary"}
+                                              className={`nav-link ${isCurrent}`}
                                         >{item.title}</Link>
                                         <Dropdown.Toggle key={"dropdown-toggle" + item.ID} id={"dropdown-toggle" + item.ID}
                                                          split
-                                                         variant={"outline-secondary"} />
+                                                         variant={"link"} />
 
                                         <Dropdown.Menu>
                                             {childItems.map((item) => {
@@ -53,15 +57,16 @@ const BsNavbar = ({state}) => {
                                                 return (
                                                     <Link key={item.ID}
                                                           link={childFrontendUrl.pathname + childFrontendUrl.hash}
-                                                          className={"dropdown-item"}>{item.title}</Link>
+                                                          className={`dropdown-item ${isCurrent}`}>{item.title}</Link>
                                                 )
                                             })}
                                         </Dropdown.Menu>
                                     </Dropdown>
+                                    </li>
                                 )
                             }
                         })}
-                    </ButtonGroup>
+                    </ul>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>
