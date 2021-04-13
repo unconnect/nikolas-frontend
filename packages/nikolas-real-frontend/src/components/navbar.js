@@ -1,5 +1,6 @@
 import React from "react";
 import {connect} from "frontity";
+import Link from "@frontity/components/link";
 import {Button, Nav, Navbar, Dropdown, ButtonGroup, ButtonToolbar} from 'react-bootstrap';
 
 /**
@@ -19,7 +20,7 @@ const BsNavbar = ({state}) => {
     console.log('Menu ITEMS:', items)
     return (
 
-        <Navbar bg="light" expand="lg">
+        <Navbar bg="dark" variant="dark" fixed={"top"} expand="md">
             <Navbar.Brand className="h1 mb-0 font-weight-bold" href="/">{brandname}</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
@@ -31,17 +32,17 @@ const BsNavbar = ({state}) => {
                             if (!item.child_items) {
                                 return (
                                     // Only output pathname and has from URL
-                                    <Button variant={"outline-secondary"} key={item.ID}
-                                              href={itemFrontendUrl.pathname + itemFrontendUrl.hash}>{item.title}</Button>
+                                    <Link className={"btn btn-outline-secondary"} key={item.ID}
+                                              link={itemFrontendUrl.pathname + itemFrontendUrl.hash}>{item.title}</Link>
                                 )
                             } else {
                                 const childItems = item.child_items
                                 return (
                                     <Dropdown key={"dropdown" + item.ID} as={ButtonGroup} variant="outline-secondary">
-                                        <Button key={item.ID}
-                                                  href={itemFrontendUrl.pathname + itemFrontendUrl.hash}
-                                                  variant={"outline-secondary"}
-                                        >{item.title}</Button>
+                                        <Link key={item.ID}
+                                                  link={itemFrontendUrl.pathname + itemFrontendUrl.hash}
+                                              className={"btn btn-outline-secondary"}
+                                        >{item.title}</Link>
                                         <Dropdown.Toggle key={"dropdown-toggle" + item.ID} id={"dropdown-toggle" + item.ID}
                                                          split
                                                          variant={"outline-secondary"} />
@@ -50,9 +51,9 @@ const BsNavbar = ({state}) => {
                                             {childItems.map((item) => {
                                                 const childFrontendUrl = new URL(item.url)
                                                 return (
-                                                    <Dropdown.Item key={item.ID}
-                                                                   href={childFrontendUrl.pathname + childFrontendUrl.hash}
-                                                                       variant={"outline-secondary"}>{item.title}</Dropdown.Item>
+                                                    <Link key={item.ID}
+                                                          link={childFrontendUrl.pathname + childFrontendUrl.hash}
+                                                          className={"dropdown-item"}>{item.title}</Link>
                                                 )
                                             })}
                                         </Dropdown.Menu>
