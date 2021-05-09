@@ -65,10 +65,10 @@ const Root = ({state}) => {
                             </Switch>
                         </Col>
                     </Row>
-                    <hr/>
                 </Container>
             </main>
             <footer className="container">
+                <hr/>
                 <p>&copy; {theYears} {brandname}</p>
             </footer>
         </>

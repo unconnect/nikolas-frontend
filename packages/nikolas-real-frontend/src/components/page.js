@@ -11,7 +11,6 @@ const Page = ({ state }) => {
     return (
         <div id={postid}>
             <div className="content" dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
-            <hr/>
         </div>
     )
 }
