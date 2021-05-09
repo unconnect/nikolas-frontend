@@ -2,7 +2,7 @@ import React from "react"
 import {connect, Global, Head, css, styled} from "frontity"
 import Switch from "@frontity/components/switch"
 
-import {Container, Row, Col, Card, Jumbotron} from 'react-bootstrap';
+import {Container, Row, Col} from 'react-bootstrap';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
@@ -11,6 +11,7 @@ import Post from "./post"
 import Page from "./page"
 import Title from "./title"
 import BsNavbar from "./navbar"
+import JumbotronHeader from "./jumbotron";
 
 // TODO: create more meaningful components
 
@@ -45,15 +46,7 @@ const Root = ({state}) => {
             />
             <main>
                 <BsNavbar />
-                <Jumbotron className="rounded-0">
-                    <Container>
-                        <Row>
-                            <Col>
-                                <h1 className={"display-1"}>{page.title.rendered}</h1>
-                            </Col>
-                        </Row>
-                    </Container>
-                </Jumbotron>
+                <JumbotronHeader />
                 <Container fluid="md">
                     <Row>
                         <Col>
