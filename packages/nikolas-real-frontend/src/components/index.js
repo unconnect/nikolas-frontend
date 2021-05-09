@@ -11,7 +11,7 @@ import Post from "./post"
 import Page from "./page"
 import Title from "./title"
 import BsNavbar from "./navbar"
-import JumbotronHeader from "./jumbotron";
+import Pagetitle from "./pagetitle";
 
 // TODO: create more meaningful components
 
@@ -46,7 +46,7 @@ const Root = ({state}) => {
             />
             <main>
                 <BsNavbar />
-                <JumbotronHeader />
+                <Pagetitle />
                 <Container fluid="md">
                     <Row>
                         <Col>

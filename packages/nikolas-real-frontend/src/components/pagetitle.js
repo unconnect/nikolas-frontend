@@ -1,7 +1,7 @@
-import { Head, connect, decode } from "frontity";
-import {Container, Row, Col, Jumbotron} from "react-bootstrap";
+import { connect, decode } from "frontity";
+import {Container} from "react-bootstrap";
 
-const JumbotronHeader = ({ state }) => {
+const PageTitle = ({ state }) => {
   // Get data about the current URL.
   const data = state.source.get(state.router.link);
   // Set the default title.
@@ -36,16 +36,11 @@ const JumbotronHeader = ({ state }) => {
   }
 
   return (
-    <Jumbotron className="jumbotron-fluid">
-        <Container>
-            <Row>
-                <Col>
-                    <h1 className={"display-1"}>{title}</h1>
-                </Col>
-            </Row>
-        </Container>
-    </Jumbotron>
+    <Container className={"mt-4"}>
+        <p>{title}</p>
+        <hr/>
+    </Container>
   );
 };
 
-export default connect(JumbotronHeader);
+export default connect(PageTitle);
