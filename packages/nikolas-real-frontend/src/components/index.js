@@ -17,6 +17,8 @@ import BsNavbar from "./navbar"
 const Root = ({state}) => {
     // Retrieve data from frontity state of current link (url)
     const data = state.source.get(state.router.link)
+    const page = state.source[data.type][data.id]
+
 
     // Get current Date and set the year for use in footer
     let currentDate = new Date()
@@ -47,7 +49,7 @@ const Root = ({state}) => {
                     <Container>
                         <Row>
                             <Col>
-                                <h1>Hello Frontity from the root component!</h1>
+                                <h1 className={"display-1"}>{page.title.rendered}</h1>
                             </Col>
                         </Row>
                     </Container>

@@ -10,10 +10,8 @@ const Page = ({ state }) => {
 
     return (
         <div id={postid}>
-            <h2>{page.title.rendered}</h2>
             <div className="content" dangerouslySetInnerHTML={{ __html: page.content.rendered}} />
             <hr/>
-            <Link link="/">back to home</Link>
         </div>
     )
 }
