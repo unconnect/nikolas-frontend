@@ -21,7 +21,7 @@ const BsNavbar = ({state}) => {
     return (
 
         <Navbar bg="dark" variant="dark" fixed={"top"} expand="md">
-            <Navbar.Brand className="h1 mb-0 font-weight-bold" href="/">{brandname}</Navbar.Brand>
+            <Link className={'navbar-brand h1 mb-0 font-weight-bold'} link="/">{brandname}</Link>
             <Navbar.Toggle aria-controls="basic-navbar-nav"/>
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" aria-label="toolbar">
