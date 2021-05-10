@@ -10,10 +10,20 @@ const nikolasRealFront = {
     theme: Root,
   },
   state: {
+    /**
+     * State is where the packages store their default settings and other
+     * relevant state. It is scoped to the `theme` namespace.
+     */
     theme: {
       menu: [],
       menuUrl: "primary-menu",
-      brandname: "Alexander Nikolas Reuber"
+      brandname: "Alexander Nikolas Reuber",
+      autoPrefetch: "in-view",
+      isMobileMenuOpen: false,
+      featured: {
+        showOnList: false,
+        showOnPost: false,
+      },
     },
   },
   actions: {
