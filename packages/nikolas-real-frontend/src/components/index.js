@@ -12,8 +12,11 @@ import Page from "./page"
 import Title from "./title"
 import BsNavbar from "./navbar"
 import Pagetitle from "./pagetitle";
+import Loading from "./loading";
+import PageError from "@frontity/mars-theme/src/components/page-error";
 
 // TODO: create more meaningful components
+// TODO: Router should process content links from wp
 
 const Root = ({state}) => {
     // Retrieve data from frontity state of current link (url)
@@ -35,6 +38,8 @@ const Root = ({state}) => {
         <>
            <Title />
            <Head>
+               <meta name="description" content={state.frontity.description} />
+               <html lang="de" />
                 <link
                     rel="stylesheet"
                     href={bootstrapStyles}
@@ -51,10 +56,11 @@ const Root = ({state}) => {
                     <Row>
                         <Col>
                             <Switch>
+                                <Loading when={data.isFetching} />
                                 <List when={data.isArchive}/>
                                 <Post when={data.isPost}/>
                                 <Page when={data.isPage}/>
-                                <div when={data.isError}>ERROR this page was not found!</div>
+                                <PageError when={data.isError} />
                             </Switch>
                         </Col>
                     </Row>
