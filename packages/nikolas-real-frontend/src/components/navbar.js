@@ -22,7 +22,7 @@ const BsNavbar = ({state}) => {
 
         <Navbar bg="dark" variant="dark" fixed={"top"} expand="md">
             <Link className={'navbar-brand h1 mb-0 font-weight-bold'} link="/">{brandname}</Link>
-            <Navbar.Toggle aria-controls="basic-navbar-nav"/>
+            { items.length > 0 ? <Navbar.Toggle aria-controls="basic-navbar-nav"/> : null }
             <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="mr-auto" aria-label="toolbar">
                     <ul className="navbar-nav mr-auto">
@@ -42,26 +42,27 @@ const BsNavbar = ({state}) => {
                                 const childItems = item.child_items
                                 return (
                                     <li className="nav-item" key={item.ID}>
-                                    <Dropdown key={"dropdown" + item.ID} as={ButtonGroup} variant="default">
-                                        <Link key={item.ID}
+                                        <Dropdown key={"dropdown" + item.ID} as={ButtonGroup} variant="default">
+                                            <Link key={item.ID}
                                                   link={itemFrontendUrl.pathname + itemFrontendUrl.hash}
-                                              className={`nav-link ${isCurrent}`}
-                                        >{item.title}</Link>
-                                        <Dropdown.Toggle key={"dropdown-toggle" + item.ID} id={"dropdown-toggle" + item.ID}
-                                                         split
-                                                         variant={"link"} />
+                                                  className={`nav-link ${isCurrent}`}
+                                            >{item.title}</Link>
+                                            <Dropdown.Toggle key={"dropdown-toggle" + item.ID}
+                                                             id={"dropdown-toggle" + item.ID}
+                                                             split
+                                                             variant={"link"}/>
 
-                                        <Dropdown.Menu>
-                                            {childItems.map((item) => {
-                                                const childFrontendUrl = new URL(item.url)
-                                                return (
-                                                    <Link key={item.ID}
-                                                          link={childFrontendUrl.pathname + childFrontendUrl.hash}
-                                                          className={`dropdown-item ${isCurrent}`}>{item.title}</Link>
-                                                )
-                                            })}
-                                        </Dropdown.Menu>
-                                    </Dropdown>
+                                            <Dropdown.Menu>
+                                                {childItems.map((item) => {
+                                                    const childFrontendUrl = new URL(item.url)
+                                                    return (
+                                                        <Link key={item.ID}
+                                                              link={childFrontendUrl.pathname + childFrontendUrl.hash}
+                                                              className={`dropdown-item ${isCurrent}`}>{item.title}</Link>
+                                                    )
+                                                })}
+                                            </Dropdown.Menu>
+                                        </Dropdown>
                                     </li>
                                 )
                             }
