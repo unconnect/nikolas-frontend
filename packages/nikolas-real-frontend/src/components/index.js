@@ -38,6 +38,11 @@ const Root = ({state}) => {
         <>
            <Title />
            <Head>
+               {/* Super sweet! https://twitter.com/LeaVerou/status/1241619866475474946*/}
+               <link
+                    rel="icon"
+                    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 x=%22-.125em%22 font-size=%2289%22>🤓</text></svg>"
+               />
                <meta name="description" content={state.frontity.description} />
                <html lang="de" />
                 <link
