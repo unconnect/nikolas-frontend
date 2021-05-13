@@ -34,6 +34,11 @@ const Title = ({ state }) => {
     title = `404 Not Found - ${state.frontity.title}`;
   }
 
+  if (data.isHome) {
+    // Set Homepage title by theme state
+    title = `Homepage of ${state.theme.brandname}`;
+  }
+
   return (
     <Head>
       <title>{title}</title>
