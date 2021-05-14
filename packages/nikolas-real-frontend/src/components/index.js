@@ -48,6 +48,8 @@ const Root = ({state}) => {
                 <link
                     rel="stylesheet"
                     href={bootstrapStyles}
+                    media="print"
+                    onload="this.media='all'; this.onload=null;"
                 />
             </Head>
 
